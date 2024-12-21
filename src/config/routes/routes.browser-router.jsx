@@ -6,7 +6,7 @@ import LandingPage from '../../views/pages/landing.page'
 
 const routesConfig = createBrowserRouter([
   {
-    path: '',
+    path: '/',
     element: <RootLayout />,
     children: [
       {
@@ -18,7 +18,7 @@ const routesConfig = createBrowserRouter([
         element: <LandingPage />,
       },
     ],
-  },
+  }
 ])
 
 export default routesConfig
