@@ -1,0 +1,82 @@
+.chess-board {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  width: 400px;
+  height: 400px;
+
+  .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background-color: white;
+
+    .square-content {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img.piece {
+        width: 40px;
+      }
+
+      &.king-in-check {
+        box-shadow: var(--chess-king-in-check-square-box-shadow);
+      }
+
+      &.last-move {
+        box-shadow: var(--chess-selected-last-move-square-box-shadow);
+      }
+
+      &.promotion-square {
+        box-shadow: var(--chess-selected-promotion-square-box-shadow);
+      }
+
+      &.selected-square {
+        box-shadow: var(--chess-selected-square-box-shadow);
+      }
+    }
+
+    .safe-square {
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      background-color: var(--chess-square-highlighter);
+      border-radius: 50%;
+      z-index: 100;
+    }
+
+    &.dark {
+      background-color: var(--chess-dark-square-Color);
+      .rows, .cols {
+        color: var(--chess-light-square-Color);
+      }
+    }
+
+    &.light {
+      background-color: var(--chess-light-square-Color);
+      .rows, .cols {
+        color: var(--chess-dark-square-Color);
+      }
+    }
+  }
+
+  .rows {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    margin: 0;
+  }
+
+  .cols {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    margin: 0;
+  }
+}

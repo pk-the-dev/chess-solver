@@ -1,0 +1,6 @@
+@import url('./components/chess-board.scss');
+
+.full-height-container {
+  overflow: hidden;
+  background-color: var(--background);
+}

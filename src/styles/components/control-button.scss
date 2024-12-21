@@ -1,0 +1,19 @@
+.controls {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.control-button {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  flex: 25%;
+  border-radius: 4px;
+  padding: 12px;
+  transition: background 200ms ease-in-out;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 200ms ease-in-out;
+  }
+}

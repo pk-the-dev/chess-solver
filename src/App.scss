@@ -1,0 +1,13 @@
+@import url('./styles/colors.scss');
+@import url('./styles/layout.scss');
+
+@import url('./styles/components/hover-style-button.scss');
+@import url('./styles/components/control-button.scss');
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100vh;
+}
