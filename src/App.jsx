@@ -5,7 +5,7 @@ import { ChessBoardProvider } from './context/chess-board/chess-board.context.pr
 
 function App() {
   document.addEventListener('contextmenu', (event) => {
-    // event.preventDefault();
+    event.preventDefault();
   });
 
   return (
